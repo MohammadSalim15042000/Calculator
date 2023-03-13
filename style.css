@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cal{
+  
+    /* background-color: red; */
+    /* opacity: 0.0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 549px;
+    position: absolute;
+    bottom: 45px;
+    left: 580px;
+    transition: 5s ease;
+
+
+}
+.cal:hover{
+    /* background-color: red; */
+    opacity: 1;
+    position: absolute;
+    transform: scale(3);
+    bottom: 300px;
+    left: 580px;
+    color: blue;
+}
+.main-container{
+    width: 500px;
+    height: 500px;
+    background-image: url("calculator.png");
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    padding-left: 70px;
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ress{
+    position: absolute;
+    top: 180px; left:240px
+    
+}
+#h1{
+    padding-left: 5.5px;
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.4;
+    transition: 1s ease;
+    color: rgb(255, 255, 255);}
+    #h1:hover{
+        background-color: black;
+        color: white;
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+
+    .image{
+        display: flex;
+        height: 100px;
+        /* background-color: red; */
+        position: absolute;
+        top: 0px; left: 0;
+        width: 570px;
+        gap: 10px;
+        overflow: hidden;
+    }
+    
+.img{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+.img1{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 17px; left: 20px;
+    animation: image1 5s infinite ease;
+    
+    
+    
+}
+.img2{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 17px; left: 140px;
+   animation: image2 5s infinite ease-in;
+}
+.img3{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 17px;
+    left: 250px;
+    animation: image3 5s infinite ease-out;
+    
+}
+.img4{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 17px;
+    right: 0px;
+    animation: image4 5s infinite ease-in-out;
+    
+}
+
+
+.btn button{
+    background-color: red;
+    border-radius: 2px;
+    color: white;
+    opacity: 0.5;
+    transition: 1s ease;
+}
+.btn button:hover{
+    background-color: black;
+    transform: scale(1.2);
+    opacity: 1;
+}
+input{
+    width: 100%;
+    transition: 2s;
+}
+input:hover{
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+}
+
+
+
+.main-img{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    opacity: 0.1;
+    overflow: hidden;
+    transition: 2s;
+}
+.main-img:hover{
+    opacity: 0.9;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes image1{
+    from{
+        top: 17px; left: 20px;
+    }
+    to{
+top: 17px; left: 500px;
+    }
+}
+@keyframes image2{
+    from{
+        top: 17px; left: 140px;
+
+    }
+    to{
+        top: 17px; left: 500px;
+    }
+}
+
+@keyframes image3{
+    from{
+        top: 17px;
+        left: 250px;
+    }
+    to{
+top: 17px; left: 500px;
+    }
+}
+@keyframes image4{
+    from{
+        top: 17px;
+    right: 0px;
+    
+    }
+    to{
+top: 17px; right: 500px;
+    }
+}
